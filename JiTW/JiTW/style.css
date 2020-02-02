@@ -1,0 +1,205 @@
+
+html
+{
+	background-color: silver;
+}
+body
+{
+ 	background-color: silver;
+}
+#Tytul
+{
+        font-size: 60px;
+        background-color: #0E315C;
+        width:100%;
+        white-space: nowrap;
+	text-align: center;
+	color: #9B8715;    
+}
+
+#glowne
+{
+	max-width:1200px;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+#Tresc
+{
+	font-family: Times, Times New Roman, serif;
+        max-width: 1200px;
+        background-color: silver;
+        margin-left: auto;
+        margin-right: auto;
+        background-clip: content-box;
+        position: relative;
+}
+h1
+{
+	color: red;
+	letter-spacing: 10px;
+}
+h2
+{
+	color: #2D4E16;
+}
+h3
+{
+	color: orange;
+}
+p
+{
+	text-indent: 30px;
+}
+p:first-letter 
+{
+	color: #8E2E72;
+	font-size: 200%;
+}
+table
+{
+	border: 2px solid red;
+   	border-collapse: collapse;
+   	background-color: #ffc;
+}
+tr
+{
+	border: 1px solid orange;
+}
+thead
+{
+	background-color: #1FB3A2;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+#firstcol
+{
+	background-color: grey;
+}
+.seccol
+{
+	background-color: #7B40D7;
+}
+tfoot
+{
+	background-color: #78960F;
+}
+tbody
+{
+	background-color: #F86B4B;
+	font-style: italic;
+}
+ol
+{
+	list-style-type: upper-roman;
+}
+ol ul
+{
+	list-style-type: lower-roman;
+}
+ol ul ul
+{
+	list-style-type: lower-greek;
+}
+#Steve
+{
+	width: 20%;
+	float: left;
+	clear:both;
+}
+#Apple
+{
+	width: 5%;
+	float: right;
+	clear:both;
+}
+#Spis_tresci 
+{
+	width: 220px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	background-color: #0E315C;
+	position: fixed;
+}
+#Spis_tresci ul li 
+{
+	list-style: none;
+	background-color: #E6DA59;
+	border-color: grey;
+	border-collapse: separate;
+	border-style: solid;
+	text-align: center;
+}
+#Spis_tresci ul li:hover
+{
+	cursor: default;
+	color: red;
+}
+a:hover 
+{
+	cursor: default;
+	color: red;
+}
+#Tresc 
+{
+	height: 100%;
+	background-color: grey;
+	margin-left:250px;
+	background-clip: content-box;
+	position: relative;
+}
+
+@media only screen and (min-width: 801px) {
+	#menu {
+		display: none;
+	}
+	#Tresc {
+            margin-left: 250px;
+            
+        }
+}
+@media only screen and (max-width: 800px) {
+	#Tresc {
+              
+            margin-left: 240px;
+            transition:1s;
+        }
+        #menu {
+            position: fixed;
+            display: block;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+            background: #0E315C;         
+            border-color: grey;
+            border-collapse: separate;
+            border-style: inset;
+            text-align: center;
+            width: 60px;
+            height: 25px;
+        }
+        #menu:hover+#Spis_tresci {
+            z-index: 2;
+            left: 0px;
+	    transition: 1s;  
+        }
+        #Spis_tresci {
+            
+            width: 220px;
+            height: 100%;
+            left: -220px;
+            float: left;
+            text-align: center;
+            background: #0E315C;
+            position: fixed;
+	    transition:1s;
+        }
+        #Spis_tresci:hover {
+            left: 0px;
+        }
+        #Spis_tresci:hover+#menu {
+            display: none;
+        }
+}
+

@@ -1,0 +1,140 @@
+body {
+    font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+#Tytul {
+	padding: 10px;
+	letter-spacing: 0.5vw;
+	text-align: center;
+	color: black;
+}
+
+body {
+	margin: auto;
+	padding: 10px;
+    max-width: 960px;
+	background-color: #EFEFEF;
+	border: 3px solid grey;
+}
+p {
+    text-indent: 20px;
+}
+p:first-letter {
+    color:green;
+    font-weight: bold;
+}
+h1 {
+    color: green;
+    letter-spacing: 4px;
+}
+h2 {
+    color: blue;
+}
+table{
+	border: 2px solid blue;
+	border-collapse: collapse;
+	background-color: grey;
+}
+tr{
+	border: 1px solid green;
+}
+thead{
+	background-color: #6CC471;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+#firstcol{
+	background-color: white;
+}
+.seccol{
+	background-color: white;
+}
+tfoot{
+	background-color: #6CC471;
+}
+tbody{
+	background-color: #B7CE3C;
+	font-style: italic;
+}
+ol
+{
+        list-style-type: upper-roman;
+}
+ol ul
+{
+        list-style-type: lower-roman;
+}
+ol ul ul
+{
+        list-style-type: lower-greek;
+}
+#Steve
+{
+        width: 20%;
+        float: left;
+        clear:both;
+}
+#Apple
+{
+        width: 5%;
+        float: right;
+        clear:both;
+}
+
+#Tresc {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+}
+
+#menu {
+	width: auto;
+	position: absolute;
+	top: 82px;
+	bottom: auto;
+	border: 0;
+	background-color: transparent;
+}
+#Spis_tresci p{
+	display:none;
+}
+#Spis_tresci ul {
+	list-style-type: none;
+	padding: 0;
+}
+#Spis_tresci li, ul {
+	text-align:center;
+	display: inline;
+}
+
+#Spis_tresci #styles_list ul {
+	list-style-type: none;
+        padding: 0;
+}
+
+#Spis_tresci #styles_list li, ul {
+        text-align:center;
+        display: inline;
+}
+
+#Spis_tresci #styles_list li {
+        display: inline-block;
+        padding: 8px;
+        margin: 0px;
+        color: blue;
+}
+
+#Spis_tresci li a {
+	display: inline-block;
+	padding: 8px;
+	margin: 0px;
+        color: blue;
+}
+#menu{
+	display:none;
+}
